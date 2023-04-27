@@ -6,7 +6,6 @@ from typing import List, Dict
 def read(path: str) -> List[Dict]:
      with open(path, encoding="utf-8") as file:
         return csv.DictReader(file)
-        
 
 
 def get_unique_job_types(path: str) -> List[str]:
