@@ -1,10 +1,11 @@
 from functools import lru_cache
 from typing import List, Dict
+import csv
 
 
 @lru_cache
 def read(path: str) -> List[Dict]:
-     with open(path, encoding="utf-8") as file:
+    with open(path, encoding="utf-8") as file:
         return csv.DictReader(file)
 
 
