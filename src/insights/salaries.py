@@ -7,7 +7,7 @@ def get_max_salary(path: str) -> int:
     return max([
         int(max_salary["max_salary"])
         for max_salary in jobs
-            if max_salary["max_salary"].isdigit()
+        if max_salary["max_salary"].isdigit()
     ])
 
 
@@ -16,10 +16,8 @@ def get_min_salary(path: str) -> int:
     return min([
         int(min_salary["min_salary"])
         for min_salary in jobs
-            if min_salary["min_salary"].isdigit()
+        if min_salary["min_salary"].isdigit()
     ])
-
-
 
 
 def matches_salary_range(job: Dict, salary: Union[int, str]) -> bool:
